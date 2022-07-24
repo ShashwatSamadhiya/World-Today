@@ -15,7 +15,7 @@ export class NewsItem extends Component {
         
             <img src={imageurl} className="card-img-top" alt="..." />
             <div className="card-body">
-                <h5 className="card-title">{title}</h5>
+                <h5 className="card-title">{title}..</h5>
                 <p className="card-text">{description}...</p>
                 <p className="card-text"><small className="text-muted"></small>{this.props.author===null?"Unknown":this.props.author} {new Date(this.props.date).toGMTString()}</p>
                 <a rel="noreferrer" href={newsUrl} target="_blank" className="btn btn-sm btn-dark">Read More</a>

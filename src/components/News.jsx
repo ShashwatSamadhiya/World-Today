@@ -25,7 +25,7 @@ export default class News extends Component {
             page:1,
             totalArticles:0
         }
-        document.title=`${this.capitalizeFirstLetter(this.props.category)}-NewsMonkey`;
+        document.title=`${this.capitalizeFirstLetter(this.props.category)}-World Today`;
     }
     
      capitalizeFirstLetter=(string)=>{
@@ -96,7 +96,7 @@ export default class News extends Component {
   render() {
     return (
       <>
-           <h1 className="text-center">NewsMonkey - Top  {this.capitalizeFirstLetter(this.props.category)} Headlines</h1>
+           <h5 className="text-center">Worlds Today - Top  {this.capitalizeFirstLetter(this.props.category)} Headlines</h5>
           {/* <h2>NewsMonkey - Top Headlines</h2> */}   
           {/* {this.state.loading &&   <Spinner />} */}
           <InfiniteScroll
